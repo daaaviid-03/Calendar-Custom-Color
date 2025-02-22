@@ -1,0 +1,58 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    width: 450px;
+    height: 500px;
+    color: #333;
+}
+
+
+
+
+/* Estilo de la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 8px; /* Ancho de la barra */
+    border-radius: 10px;
+}
+
+/* Track (fondo de la barra) */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color de fondo */
+    border-radius: 10px;
+}
+
+/* Thumb (deslizador) */
+::-webkit-scrollbar-thumb {
+    background: #888; /* Color del deslizador */
+    border-radius: 10px;
+}
+
+/* Hover sobre el thumb */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+
+
+/* Ensure the select menu looks good */
+.pastel-colors {
+    width: 100%;
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: white;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Hover effect: subtle illumination */
+.pastel-colors:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Custom dropdown styling */
+.pastel-colors option {
+    padding: 5px 10px;
+}
+

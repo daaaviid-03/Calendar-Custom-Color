@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calendar Custom Color</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body class="p-3">
+    <div class="container">
+        <h1 class="text-center m-4 fw-bold">Calendar Custom Color</h1>
+
+        <!-- Day of Week Color Settings Section -->
+        <div class="card alert alert-secondary rounded-4">
+            <div class="card-header">
+                <h3>Customize Colors</h3>
+            </div>
+            <div class="card-body">
+
+                <p class="fw-bold">Days of the Week:</p>
+
+                <div class="d-flex justify-content-between align-items-center alert alert-primary rounded-4">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="mondayCheck" name="days" value="Monday">
+                        <label class="form-check-label ms-2" for="mondayCheck">Monday</label>
+                    </div>
+                    <select type="color" name="color-Monday" class="form-select form-select-sm w-auto pastel-colors" disabled>
+                        <optgroup label="🌑 Modo Oscuro">
+                            <option value="rgba(128, 102, 161, 0.7)" style="background-color: rgba(128, 102, 161, 1); color: #fff;">Muted Violet</option>
+                            <option value="rgba(108, 140, 140, 0.7)" style="background-color: rgba(108, 140, 140, 1); color: #fff;">Dusty Teal</option>
+                            <option value="rgba(110, 130, 180, 0.7)" style="background-color: rgba(110, 130, 180, 1); color: #fff;">Slate Blue</option>
+                            <option value="rgba(134, 144, 102, 0.7)" style="background-color: rgba(134, 144, 102, 1); color: #fff;">Soft Olive</option>
+                            <option value="rgba(170, 112, 126, 0.7)" style="background-color: rgba(170, 112, 126, 1); color: #fff;">Muted Rose</option>
+                        </optgroup>
+                        <optgroup label="🌕 Modo Claro">
+                            <option value="rgba(225, 206, 187, 0.7)" style="background-color: rgba(225, 206, 187, 1); color: #000;">Warm Sand</option>
+                            <option value="rgba(192, 210, 230, 0.7)" style="background-color: rgba(192, 210, 230, 1); color: #000;">Pale Blue</option>
+                            <option value="rgba(232, 185, 185, 0.7)" style="background-color: rgba(232, 185, 185, 1); color: #000;">Blush Coral</option>
+                            <option value="rgba(244, 230, 190, 0.7)" style="background-color: rgba(244, 230, 190, 1); color: #000;">Soft Butter</option>
+                            <option value="rgba(221, 204, 230, 0.7)" style="background-color: rgba(221, 204, 230, 1); color: #000;">Powder Lavender</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center alert alert-primary rounded-4">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="tuesdayCheck" name="days" value="Tuesday">
+                        <label class="form-check-label ms-2" for="tuesdayCheck">Tuesday</label>
+                    </div>
+                    <select type="color" name="color-Tuesday" class="form-select form-select-sm w-auto pastel-colors" disabled>
+                        <optgroup label="🌑 Modo Oscuro">
+                            <option value="rgba(128, 102, 161, 0.7)" style="background-color: rgba(128, 102, 161, 1); color: #fff;">Muted Violet</option>
+                            <option value="rgba(108, 140, 140, 0.7)" style="background-color: rgba(108, 140, 140, 1); color: #fff;">Dusty Teal</option>
+                            <option value="rgba(110, 130, 180, 0.7)" style="background-color: rgba(110, 130, 180, 1); color: #fff;">Slate Blue</option>
+                            <option value="rgba(134, 144, 102, 0.7)" style="background-color: rgba(134, 144, 102, 1); color: #fff;">Soft Olive</option>
+                            <option value="rgba(170, 112, 126, 0.7)" style="background-color: rgba(170, 112, 126, 1); color: #fff;">Muted Rose</option>
+                        </optgroup>
+                        <optgroup label="🌕 Modo Claro">
+                            <option value="rgba(225, 206, 187, 0.7)" style="background-color: rgba(225, 206, 187, 1); color: #000;">Warm Sand</option>
+                            <option value="rgba(192, 210, 230, 0.7)" style="background-color: rgba(192, 210, 230, 1); color: #000;">Pale Blue</option>
+                            <option value="rgba(232, 185, 185, 0.7)" style="background-color: rgba(232, 185, 185, 1); color: #000;">Blush Coral</option>
+                            <option value="rgba(244, 230, 190, 0.7)" style="background-color: rgba(244, 230, 190, 1); color: #000;">Soft Butter</option>
+                            <option value="rgba(221, 204, 230, 0.7)" style="background-color: rgba(221, 204, 230, 1); color: #000;">Powder Lavender</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center alert alert-primary rounded-4">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="wednesdayCheck" name="days" value="Wednesday">
+                        <label class="form-check-label ms-2" for="wednesdayCheck">Wednesday</label>
+                    </div>
+                    <select type="color" name="color-Wednesday" class="form-select form-select-sm w-auto pastel-colors" disabled>
+                        <optgroup label="🌑 Modo Oscuro">
+                            <option value="rgba(128, 102, 161, 0.7)" style="background-color: rgba(128, 102, 161, 1); color: #fff;">Muted Violet</option>
+                            <option value="rgba(108, 140, 140, 0.7)" style="background-color: rgba(108, 140, 140, 1); color: #fff;">Dusty Teal</option>
+                            <option value="rgba(110, 130, 180, 0.7)" style="background-color: rgba(110, 130, 180, 1); color: #fff;">Slate Blue</option>
+                            <option value="rgba(134, 144, 102, 0.7)" style="background-color: rgba(134, 144, 102, 1); color: #fff;">Soft Olive</option>
+                            <option value="rgba(170, 112, 126, 0.7)" style="background-color: rgba(170, 112, 126, 1); color: #fff;">Muted Rose</option>
+                        </optgroup>
+                        <optgroup label="🌕 Modo Claro">
+                            <option value="rgba(225, 206, 187, 0.7)" style="background-color: rgba(225, 206, 187, 1); color: #000;">Warm Sand</option>
+                            <option value="rgba(192, 210, 230, 0.7)" style="background-color: rgba(192, 210, 230, 1); color: #000;">Pale Blue</option>
+                            <option value="rgba(232, 185, 185, 0.7)" style="background-color: rgba(232, 185, 185, 1); color: #000;">Blush Coral</option>
+                            <option value="rgba(244, 230, 190, 0.7)" style="background-color: rgba(244, 230, 190, 1); color: #000;">Soft Butter</option>
+                            <option value="rgba(221, 204, 230, 0.7)" style="background-color: rgba(221, 204, 230, 1); color: #000;">Powder Lavender</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center alert alert-primary rounded-4">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="thursdayCheck" name="days" value="Thursday">
+                        <label class="form-check-label ms-2" for="thursdayCheck">Thursday</label>
+                    </div>
+                    <select type="color" name="color-Thursday" class="form-select form-select-sm w-auto pastel-colors" disabled>
+                        <optgroup label="🌑 Modo Oscuro">
+                            <option value="rgba(128, 102, 161, 0.7)" style="background-color: rgba(128, 102, 161, 1); color: #fff;">Muted Violet</option>
+                            <option value="rgba(108, 140, 140, 0.7)" style="background-color: rgba(108, 140, 140, 1); color: #fff;">Dusty Teal</option>
+                            <option value="rgba(110, 130, 180, 0.7)" style="background-color: rgba(110, 130, 180, 1); color: #fff;">Slate Blue</option>
+                            <option value="rgba(134, 144, 102, 0.7)" style="background-color: rgba(134, 144, 102, 1); color: #fff;">Soft Olive</option>
+                            <option value="rgba(170, 112, 126, 0.7)" style="background-color: rgba(170, 112, 126, 1); color: #fff;">Muted Rose</option>
+                        </optgroup>
+                        <optgroup label="🌕 Modo Claro">
+                            <option value="rgba(225, 206, 187, 0.7)" style="background-color: rgba(225, 206, 187, 1); color: #000;">Warm Sand</option>
+                            <option value="rgba(192, 210, 230, 0.7)" style="background-color: rgba(192, 210, 230, 1); color: #000;">Pale Blue</option>
+                            <option value="rgba(232, 185, 185, 0.7)" style="background-color: rgba(232, 185, 185, 1); color: #000;">Blush Coral</option>
+                            <option value="rgba(244, 230, 190, 0.7)" style="background-color: rgba(244, 230, 190, 1); color: #000;">Soft Butter</option>
+                            <option value="rgba(221, 204, 230, 0.7)" style="background-color: rgba(221, 204, 230, 1); color: #000;">Powder Lavender</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center alert alert-primary rounded-4">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="fridayCheck" name="days" value="Friday">
+                        <label class="form-check-label ms-2" for="fridayCheck">Friday</label>
+                    </div>
+                    <select type="color" name="color-Friday" class="form-select form-select-sm w-auto pastel-colors" disabled>
+                        <optgroup label="🌑 Modo Oscuro">
+                            <option value="rgba(128, 102, 161, 0.7)" style="background-color: rgba(128, 102, 161, 1); color: #fff;">Muted Violet</option>
+                            <option value="rgba(108, 140, 140, 0.7)" style="background-color: rgba(108, 140, 140, 1); color: #fff;">Dusty Teal</option>
+                            <option value="rgba(110, 130, 180, 0.7)" style="background-color: rgba(110, 130, 180, 1); color: #fff;">Slate Blue</option>
+                            <option value="rgba(134, 144, 102, 0.7)" style="background-color: rgba(134, 144, 102, 1); color: #fff;">Soft Olive</option>
+                            <option value="rgba(170, 112, 126, 0.7)" style="background-color: rgba(170, 112, 126, 1); color: #fff;">Muted Rose</option>
+                        </optgroup>
+                        <optgroup label="🌕 Modo Claro">
+                            <option value="rgba(225, 206, 187, 0.7)" style="background-color: rgba(225, 206, 187, 1); color: #000;">Warm Sand</option>
+                            <option value="rgba(192, 210, 230, 0.7)" style="background-color: rgba(192, 210, 230, 1); color: #000;">Pale Blue</option>
+                            <option value="rgba(232, 185, 185, 0.7)" style="background-color: rgba(232, 185, 185, 1); color: #000;">Blush Coral</option>
+                            <option value="rgba(244, 230, 190, 0.7)" style="background-color: rgba(244, 230, 190, 1); color: #000;">Soft Butter</option>
+                            <option value="rgba(221, 204, 230, 0.7)" style="background-color: rgba(221, 204, 230, 1); color: #000;">Powder Lavender</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center alert alert-primary rounded-4">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="saturdayCheck" name="days" value="Saturday">
+                        <label class="form-check-label ms-2" for="saturdayCheck">Saturday</label>
+                    </div>
+                    <select type="color" name="color-Saturday" class="form-select form-select-sm w-auto pastel-colors" disabled>
+                        <optgroup label="🌑 Modo Oscuro">
+                            <option value="rgba(128, 102, 161, 0.7)" style="background-color: rgba(128, 102, 161, 1); color: #fff;">Muted Violet</option>
+                            <option value="rgba(108, 140, 140, 0.7)" style="background-color: rgba(108, 140, 140, 1); color: #fff;">Dusty Teal</option>
+                            <option value="rgba(110, 130, 180, 0.7)" style="background-color: rgba(110, 130, 180, 1); color: #fff;">Slate Blue</option>
+                            <option value="rgba(134, 144, 102, 0.7)" style="background-color: rgba(134, 144, 102, 1); color: #fff;">Soft Olive</option>
+                            <option value="rgba(170, 112, 126, 0.7)" style="background-color: rgba(170, 112, 126, 1); color: #fff;">Muted Rose</option>
+                        </optgroup>
+                        <optgroup label="🌕 Modo Claro">
+                            <option value="rgba(225, 206, 187, 0.7)" style="background-color: rgba(225, 206, 187, 1); color: #000;">Warm Sand</option>
+                            <option value="rgba(192, 210, 230, 0.7)" style="background-color: rgba(192, 210, 230, 1); color: #000;">Pale Blue</option>
+                            <option value="rgba(232, 185, 185, 0.7)" style="background-color: rgba(232, 185, 185, 1); color: #000;">Blush Coral</option>
+                            <option value="rgba(244, 230, 190, 0.7)" style="background-color: rgba(244, 230, 190, 1); color: #000;">Soft Butter</option>
+                            <option value="rgba(221, 204, 230, 0.7)" style="background-color: rgba(221, 204, 230, 1); color: #000;">Powder Lavender</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center alert alert-primary rounded-4">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="sundayCheck" name="days" value="Sunday">
+                        <label class="form-check-label ms-2" for="sundayCheck">Sunday</label>
+                    </div>
+                    <select type="color" name="color-Sunday" class="form-select form-select-sm w-auto pastel-colors" disabled>
+                        <optgroup label="🌑 Modo Oscuro">
+                            <option value="rgba(128, 102, 161, 0.7)" style="background-color: rgba(128, 102, 161, 1); color: #fff;">Muted Violet</option>
+                            <option value="rgba(108, 140, 140, 0.7)" style="background-color: rgba(108, 140, 140, 1); color: #fff;">Dusty Teal</option>
+                            <option value="rgba(110, 130, 180, 0.7)" style="background-color: rgba(110, 130, 180, 1); color: #fff;">Slate Blue</option>
+                            <option value="rgba(134, 144, 102, 0.7)" style="background-color: rgba(134, 144, 102, 1); color: #fff;">Soft Olive</option>
+                            <option value="rgba(170, 112, 126, 0.7)" style="background-color: rgba(170, 112, 126, 1); color: #fff;">Muted Rose</option>
+                        </optgroup>
+                        <optgroup label="🌕 Modo Claro">
+                            <option value="rgba(225, 206, 187, 0.7)" style="background-color: rgba(225, 206, 187, 1); color: #000;">Warm Sand</option>
+                            <option value="rgba(192, 210, 230, 0.7)" style="background-color: rgba(192, 210, 230, 1); color: #000;">Pale Blue</option>
+                            <option value="rgba(232, 185, 185, 0.7)" style="background-color: rgba(232, 185, 185, 1); color: #000;">Blush Coral</option>
+                            <option value="rgba(244, 230, 190, 0.7)" style="background-color: rgba(244, 230, 190, 1); color: #000;">Soft Butter</option>
+                            <option value="rgba(221, 204, 230, 0.7)" style="background-color: rgba(221, 204, 230, 1); color: #000;">Powder Lavender</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <hr>
+
+                <p class="fw-bold">Custom Calendars:</p>
+
+                <div id="calendarSettings"></div>
+
+                <hr>
+                <form id="settingsForm">
+                    <!-- Save Settings Button -->
+                    <button type="submit" class="btn btn-primary w-100">Save Settings</button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Calendar File Upload Section -->
+        <div class="card alert alert-success rounded-4">
+            <div class="card-header">
+                Upload New Calendar (.ics)
+            </div>
+            <div class="card-body">
+                <div class="mb-3">
+                    <input type="file" id="calendarFile" accept=".ics" class="form-control">
+                </div>
+                <button id="loadCalendarBtn" class="btn btn-success w-100">Load Calendar</button>
+            </div>
+        </div>
+        
+        
+    </div>
+    
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>
